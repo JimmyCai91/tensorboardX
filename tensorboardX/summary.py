@@ -228,15 +228,16 @@ def image_boxes(tag, tensor_image, tensor_boxes, rescale=1):
 def draw_boxes(disp_image, gt_boxes):
     num_boxes = gt_boxes.shape[0]
     list_gt = range(num_boxes)
-    shuffle(list_gt)
+    #shuffle(list_gt)
+    np.random.shuffle(list_gt)
     for i in list_gt:
         disp_image = _draw_single_box(disp_image,
                                       gt_boxes[i, 0],
                                       gt_boxes[i, 1],
                                       gt_boxes[i, 2],
                                       gt_boxes[i, 3],
-                                      None,
-                                      FONT,
+                                      False, #None,
+                                      None, #FONT,
                                       color='Red')
     return disp_image
 
