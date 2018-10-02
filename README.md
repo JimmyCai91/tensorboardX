@@ -18,11 +18,12 @@ Write TensorBoard events with simple function call.
 
 Tested on anaconda2 / anaconda3, with PyTorch 0.4 / torchvision 0.2 / tensorboard 1.7.0
 
-`pip install tensorboardX`
+~~`pip install tensorboardX`~~
 
 or build from source:
 
-`pip install git+https://github.com/lanpa/tensorboardX`
+~~`pip install git+https://github.com/lanpa/tensorboardX`~~
+`pip install git+https:https://github.com/JimmyCai91/tensorboardX.git`
 
 
 ## Example
